@@ -1,0 +1,14 @@
+#slika {
+  visibility: hidden;
+}
+.slikka {
+  display: block;
+  margin-top: 30px;
+}
+#jedan {
+  display: block;
+}
+
+#submiter {
+  margin-top: 30px;
+}

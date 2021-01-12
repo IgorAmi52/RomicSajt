@@ -1,0 +1,10 @@
+<div>Ovde biras ime zanra koji oces</div>
+<input type="text" name="Vrsta" [(ngModel)]="Zanr" />
+
+<button class="slikka" (click)="input.click()">Ovde biras sliku za zanr</button>
+<input type="file" id="slika" #input (change)="saljiSliku($event)" />
+
+<img id="jedan" [src]="slika" />
+<div>{{ Zanr }}</div>
+
+<button type="submit" (click)="Submiter()">Postavi</button>

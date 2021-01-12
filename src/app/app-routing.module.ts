@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { glavnoComponent } from './glavno/glavno.component';
+import { zanrKreatorComponent } from './zanr-kreatoer/zanr-kreatoer.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', component: glavnoComponent },
+  { path: 'zanrovi', component: zanrKreatorComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRootModule {}

@@ -1,0 +1,11 @@
+mat-card{
+  margin:100px auto 0px;
+  height:150px;
+  width: 60%;
+
+  background-color:	#F8F8FF;
+}
+
+mat-card-title{
+  font-size: 2em;
+}

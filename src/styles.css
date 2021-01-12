@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  box-sizing: border-box;
+  margin: 0px;
+}
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  background-color: rgba(7, 6, 6, 0.938);
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
