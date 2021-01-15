@@ -1,4 +1,4 @@
-<div>Ovde biras ime zanra koji oces</div>
+<div class="boja">Ovde biras ime zanra koji oces</div>
 <input type="text" name="Vrsta" [(ngModel)]="Zanr" />
 
 <button class="slikka" (click)="input.click()">Ovde biras sliku za zanr</button>
@@ -7,4 +7,14 @@
 <img id="jedan" [src]="slika" />
 <div>{{ Zanr }}</div>
 
-<button type="submit" (click)="Submiter()">Postavi</button>
+<button type="submit" (click)="SubmiterZanra()">Postavi zanr</button>
+
+<div class="boja">Ovde biras pesme i u koji ce zanr</div>
+<select [(ngModel)]="IzabraniZanr">
+  <option>//Zanr za pesmu//</option>
+  <option *ngFor="let zanr of Zanrovi">{{ zanr }}</option>
+</select>
+<button class="slikka" (click)="pesma.click()">Ovde biras pesmu</button>
+<input type="file" id="slika" #pesma (change)="saljiPesmu($event)" />
+<input type="text" [(ngModel)]="imePesme" />
+<button type="submit" (click)="SubmiterPesme()">Postavi pesmu</button>

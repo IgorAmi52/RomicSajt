@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { isNgContainer } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { PesmeService } from '../pesme.service';
 import { ZanroviService } from '../zanrovi.service';
 
 @Component({
@@ -11,19 +12,29 @@ import { ZanroviService } from '../zanrovi.service';
 })
 export class VrsteComponent implements OnInit {
   Vrste: { ime: string; slika: string }[] = [];
-  Subskrajber = new Subscription();
+  Pesme: { put: string; zanr: string; ime: string }[] = [];
+  SubskrajberZanrova = new Subscription();
+  SubskrajberPesama = new Subscription();
 
   constructor(
     private http: HttpClient,
-    private zanroviService: ZanroviService
+    private zanroviService: ZanroviService,
+    private pesmeService: PesmeService
   ) {}
 
   ngOnInit() {
     this.zanroviService.VracanjeZanrova();
-    this.Subskrajber = this.zanroviService
+    this.SubskrajberZanrova = this.zanroviService
       .SlusajZanrove()
       .subscribe((zanrovi) => {
         this.Vrste = zanrovi;
+      });
+    this.pesmeService.dobiPesme();
+    this.SubskrajberPesama = this.pesmeService
+      .VratiPesme()
+      .subscribe((PoslatePesme) => {
+        this.Pesme = PoslatePesme;
+        console.log(this.Pesme);
       });
   }
 }

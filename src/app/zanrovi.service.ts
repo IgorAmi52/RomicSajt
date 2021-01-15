@@ -8,6 +8,8 @@ import { Subject } from 'rxjs';
 export class ZanroviService {
   private ZanrData: { ime: string; slika: string }[] = [];
   private ZanrSubject = new Subject<{ ime: string; slika: string }[]>();
+  private SkupZanrovaSubject = new Subject<string[]>();
+  private SkupZanrova: string[] = [];
   constructor(private http: HttpClient) {}
 
   SlanjeZanrova(Zanr: string, FileSlika: File) {
@@ -31,6 +33,21 @@ export class ZanroviService {
         this.ZanrData = Zanrovi.zanrovi;
         this.ZanrSubject.next([...this.ZanrData]);
       });
+  }
+
+  VracanjeImenaZanrova() {
+    this.http
+      .get<{ zanrovi: { ime: string; slika: string }[] }>(
+        'http://localhost:3000/dobiZanrove'
+      )
+      .subscribe((Zanrovi) => {
+        var ZanrImena = Zanrovi.zanrovi;
+        for (var i = 0; i < ZanrImena.length; i++) {
+          this.SkupZanrova[i] = ZanrImena[i].ime;
+        }
+        this.SkupZanrovaSubject.next([...this.SkupZanrova]);
+      });
+    return this.SkupZanrovaSubject.asObservable();
   }
   SlusajZanrove() {
     return this.ZanrSubject.asObservable();

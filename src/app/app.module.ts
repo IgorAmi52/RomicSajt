@@ -12,6 +12,7 @@ import { glavnoComponent } from './glavno/glavno.component';
 import { MatCardModule } from '@angular/material/card';
 import { AppRootModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
