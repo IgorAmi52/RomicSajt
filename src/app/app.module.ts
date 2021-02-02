@@ -12,6 +12,9 @@ import { glavnoComponent } from './glavno/glavno.component';
 import { MatCardModule } from '@angular/material/card';
 import { AppRootModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { MatButtonModule } from '@angular/material/button';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppRootModule,
     FormsModule,
     HttpClientModule,
+    MatButtonModule,
+    MatExpansionModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

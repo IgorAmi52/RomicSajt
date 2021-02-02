@@ -1,16 +1,48 @@
-.sidenav {
-  height: 100%;
-  width: 110px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
 .main {
   margin-left: 110px;
   height: 100vh;
-  background-color: grey;
+  background-color: white;
+}
+.img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+img {
+  height: 100%;
+  width: auto;
+}
+.flxp {
+  display: inline-block;
+  position: absolute;
+
+  left: 15%;
+  font: 240px "Oleo Script", Helvetica, sans-serif;
+  color: black;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.beats {
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+
+  font: 240px "Oleo Script", Helvetica, sans-serif;
+  color: black;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.aboutme {
+  position: absolute;
+  top: 67%;
+  left: 35%;
+  font-size: 50px;
+  padding: 35px;
+}
+.mywork {
+  position: absolute;
+  top: 67%;
+  left: 15%;
+  font-size: 50px;
+  padding: 35px;
 }
