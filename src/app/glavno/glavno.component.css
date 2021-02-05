@@ -1,25 +1,28 @@
 .main {
   margin-left: 110px;
   height: 100vh;
-  background-color: white;
+  background-color: black;
 }
 .img {
+  display: inline-block;
   position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
+
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 img {
-  height: 100%;
-  width: auto;
+  width: 700px;
+  height: auto;
 }
+
 .flxp {
   display: inline-block;
   position: absolute;
 
   left: 15%;
   font: 240px "Oleo Script", Helvetica, sans-serif;
-  color: black;
+  color: white;
   text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 .beats {
@@ -29,7 +32,7 @@ img {
   left: 15%;
 
   font: 240px "Oleo Script", Helvetica, sans-serif;
-  color: black;
+  color: white;
   text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 .aboutme {

@@ -1,20 +1,8 @@
 <div style="margin-left: 110px">
-  <div class="container">
-    <mat-accordion class="example-headers-align" multi="false">
-      <mat-expansion-panel hideToggle *ngFor="let zanr of Vrste">
-        <mat-expansion-panel-header style="height: 500px">
-          <img
-            [src]="zanr.slika"
-            [alt]="zanr.ime"
-            style="width: 100%; height: 500px"
-          />
-        </mat-expansion-panel-header>
-        <p *ngFor="let pesma of Pesme">
-          <audio *ngIf="zanr.ime === pesma.zanr" controls>
-            <source [src]="pesma.put" />
-          </audio>
-        </p>
-      </mat-expansion-panel>
-    </mat-accordion>
+  <div class="row">
+    <div class="col-lg-4 zanr" *ngFor="let zanr of Vrste">
+      <img [src]="zanr.slika" style="width: 100%; height: 100%" />
+      <div class="centered">{{ zanr.ime }}</div>
+    </div>
   </div>
 </div>

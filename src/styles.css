@@ -5,7 +5,7 @@ html {
 body {
   box-sizing: border-box;
   margin: 0px;
-  background-color: rgba(255, 254, 254, 0.938);
+  background-color: black;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
