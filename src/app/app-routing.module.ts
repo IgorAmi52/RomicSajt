@@ -6,10 +6,10 @@ import { VrsteComponent } from './vrste/vrste.component';
 import { zanrKreatorComponent } from './zanr-kreatoer/zanr-kreatoer.component';
 
 const routes: Routes = [
-  { path: '', component: glavnoComponent },
+  { path: '', component: glavnoComponent, data: {animation: 'HomePage'} },
   { path: 'zanrovi', component: zanrKreatorComponent },
-  { path: 'aboutme', component: BiografijaComponent },
-  { path: 'mywork', component: VrsteComponent },
+  { path: 'aboutme', component: BiografijaComponent, data: {animation: 'AboutPage'} },
+  { path: 'mywork', component: VrsteComponent, data: {animation: 'SongListPage'} },
 ];
 
 @NgModule({
