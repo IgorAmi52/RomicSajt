@@ -1,1 +1,25 @@
-<router-outlet></router-outlet>
+<div class="row">
+  <div class="col-lg-6" style="height: 100vh">
+    <div class="flxp">FLXP</div>
+    <div class="beats">BEATS</div>
+    <button
+      mat-raised-button
+      color="warn"
+      class="aboutme"
+      [routerLink]="['aboutme']"
+    >
+      About me
+    </button>
+    <button
+      mat-raised-button
+      color="warn"
+      class="mywork"
+      [routerLink]="['mywork']"
+    >
+      My work
+    </button>
+  </div>
+  <div class="col-lg-6" [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+</div>

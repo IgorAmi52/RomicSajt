@@ -1,0 +1,33 @@
+.flxp {
+  display: inline-block;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  font: 240px "Oleo Script", Helvetica, sans-serif;
+  color: white;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.beats {
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+
+  font: 240px "Oleo Script", Helvetica, sans-serif;
+  color: white;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.aboutme {
+  position: absolute;
+  top: 67%;
+  left: 40%;
+  font-size: 50px;
+  padding: 35px;
+}
+.mywork {
+  position: absolute;
+  top: 67%;
+  left: 10%;
+  font-size: 50px;
+  padding: 35px;
+}

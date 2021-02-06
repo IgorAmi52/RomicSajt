@@ -1,9 +1,24 @@
-<div class="container">
-  <div class="flxpbeats"><span>FlxpBeats </span></div>
-  <div class="row">
-    <div class="col-lg-4 zanr" *ngFor="let zanr of Vrste">
-      <img [src]="zanr.slika" style="width: 100%; height: 100%" />
-      <div class="centered">{{ zanr.ime }}</div>
-    </div>
+<div class="container pano" style="height: 100vh">
+  <div class="lista">
+    <mat-accordion>
+      <mat-expansion-panel
+        hideToggle
+        *ngFor="let zanr of Vrste"
+        class="margin:0;"
+      >
+        <mat-expansion-panel-header class="zanr">
+          <img [src]="zanr.slika" style="width: 100%; height: 33.33%" />
+          <span>{{ zanr.ime }}</span>
+        </mat-expansion-panel-header>
+        <div *ngFor="let pesma of Pesme">
+          <div *ngIf="zanr.ime === pesma.zanr">
+            {{ pesma.ime }}
+            <audio controls>
+              <source [src]="pesma.put" />
+            </audio>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
   </div>
 </div>
