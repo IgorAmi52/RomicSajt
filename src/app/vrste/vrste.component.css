@@ -19,3 +19,10 @@ a {
   font: 240px "Oleo Script", Helvetica, sans-serif;
   font-size: 2.5em;
 }
+.flxpbeats {
+  height: 300px;
+  font-size: 150px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
