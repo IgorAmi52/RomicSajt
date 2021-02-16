@@ -6,10 +6,18 @@ import { VrsteComponent } from './vrste/vrste.component';
 import { zanrKreatorComponent } from './zanr-kreatoer/zanr-kreatoer.component';
 
 const routes: Routes = [
-  { path: '', component: glavnoComponent, data: {animation: 'HomePage'} },
+  {
+    path: '',
+    component: BiografijaComponent,
+    data: { animation: 'AboutPage' },
+  },
   { path: 'zanrovi', component: zanrKreatorComponent },
-  { path: 'aboutme', component: BiografijaComponent, data: {animation: 'AboutPage'} },
-  { path: 'mywork', component: VrsteComponent, data: {animation: 'SongListPage'} },
+
+  {
+    path: 'mywork',
+    component: VrsteComponent,
+    data: { animation: 'SongListPage' },
+  },
 ];
 
 @NgModule({

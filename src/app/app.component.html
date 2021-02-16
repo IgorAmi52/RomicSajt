@@ -1,22 +1,19 @@
 <div class="row">
   <div class="col-lg-6" style="height: 100vh">
-    <div class="flxp">FLXP</div>
-    <div class="beats">BEATS</div>
-    <button
-      mat-raised-button
-      color="warn"
-      class="aboutme"
-      [routerLink]="['aboutme']"
-    >
-      About me
+    <div class="glavno">
+      <div class="flxp">FLXP</div>
+    </div>
+    <button class="mywork" mat-raised-button color="warn" routerLink="mywork">
+      MyWork
     </button>
     <button
+      class="mywork"
       mat-raised-button
       color="warn"
-      class="mywork"
-      [routerLink]="['mywork']"
+      routerLink="mywork"
+      style="visibility: hidden"
     >
-      My work
+      <i class="fa fa-long-arrow-left"></i>
     </button>
   </div>
   <div class="col-lg-6" [@routeAnimations]="prepareRoute(outlet)">

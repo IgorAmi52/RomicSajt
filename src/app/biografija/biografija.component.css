@@ -1,11 +1,19 @@
-mat-card{
-  margin:100px auto 0px;
-  height:150px;
-  width: 60%;
-
-  background-color:	#F8F8FF;
+div {
+  padding: 20px;
+  width: 100%;
+}
+p {
+  text-align: center;
 }
 
-mat-card-title{
+mat-card {
+  background-color: #f8f8ff;
+  width: 100%;
+}
+
+mat-card-title {
   font-size: 2em;
+}
+mat-grid-tile {
+  padding: 10px;
 }
