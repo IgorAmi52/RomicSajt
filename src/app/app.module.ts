@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { BiografijaComponent } from './biografija/biografija.component';
-import { SlikeComponent } from './slike/slike.component';
+
 import { MatGridListModule } from '@angular/material/grid-list';
 import { VrsteComponent } from './vrste/vrste.component';
 import { FuterComponent } from './futer/futer.component';
@@ -22,7 +22,7 @@ import { MatRippleModule } from '@angular/material/core';
     AppComponent,
 
     BiografijaComponent,
-    SlikeComponent,
+
     VrsteComponent,
     FuterComponent,
     zanrKreatorComponent,

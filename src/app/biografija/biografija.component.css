@@ -2,9 +2,6 @@ div {
   padding: 20px;
   width: 100%;
 }
-p {
-  text-align: center;
-}
 
 mat-card {
   background-color: #f8f8ff;
@@ -16,4 +13,9 @@ mat-card-title {
 }
 mat-grid-tile {
   padding: 10px;
+}
+@media (max-width: 991px) {
+  app-futer {
+    visibility: hidden;
+  }
 }

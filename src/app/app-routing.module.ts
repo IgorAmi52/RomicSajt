@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'zanrovi', component: zanrKreatorComponent },
 
   {
-    path: 'mywork',
+    path: 'myWork',
     component: VrsteComponent,
     data: { animation: 'SongListPage' },
   },

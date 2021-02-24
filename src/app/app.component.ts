@@ -14,6 +14,17 @@ export class AppComponent {
       outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation
     );
   }
-
+  Router = 'myWork';
+  Router2 = 'myWork';
   title = 'RomicevSAJTTT';
+
+  MenjacRoutera() {
+    if (this.Router === 'myWork') {
+      this.Router = '';
+      this.Router2 = '<-- FlxpBeats';
+    } else {
+      this.Router = 'myWork';
+      this.Router2 = 'myWork';
+    }
+  }
 }

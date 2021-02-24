@@ -1,22 +1,22 @@
 <div class="row">
-  <div class="col-lg-6" style="height: 100vh">
-    <div class="glavno">
-      <div class="flxp">FLXP</div>
+  <div class="col-lg-6 col-12">
+    <div class="glavno" style="height: 50vh">
+      <img src="../assets/circle-cropped.png" width="100%" height="auto" />
+      <!--  <div class="flxp" color="warn">FLXP</div>-->
     </div>
-    <button class="mywork" mat-raised-button color="warn" routerLink="mywork">
-      MyWork
-    </button>
     <button
-      class="mywork"
       mat-raised-button
-      color="warn"
-      routerLink="mywork"
-      style="visibility: hidden"
+      color="primary"
+      class="mywork"
+      [routerLink]="Router"
+      (click)="MenjacRoutera()"
     >
-      <i class="fa fa-long-arrow-left"></i>
+      {{ Router2 }}
     </button>
   </div>
-  <div class="col-lg-6" [@routeAnimations]="prepareRoute(outlet)">
+  <div class="col-lg-6 col-12 boja" [@routeAnimations]="prepareRoute(outlet)">
     <router-outlet #outlet="outlet"></router-outlet>
   </div>
+  <app-vrste class="telefon"></app-vrste>
+  <app-futer class="telefon"></app-futer>
 </div>

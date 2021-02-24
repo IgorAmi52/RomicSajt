@@ -1,5 +1,8 @@
+.ekran {
+  height: 100vh;
+}
 .zanr {
-  height: 33.3333%;
+  height: 350px;
 }
 
 .lista {
@@ -38,4 +41,69 @@ span {
 .mat-expansion-panel:not(:last-child) {
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
+}
+@media (max-width: 991px) {
+  .lista {
+    overflow: visible;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: auto;
+  }
+  .ekran {
+    height: auto;
+  }
+  mat-expansion-panel {
+    background-color: black;
+  }
+}
+@media (max-width: 576px) {
+  .zanr {
+    height: 270px;
+  }
+  .lista {
+    overflow: visible;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: auto;
+  }
+  .ekran {
+    height: auto;
+  }
+  mat-expansion-panel {
+    background-color: black;
+  }
+}
+@media (max-width: 420px) {
+  .zanr {
+    height: 210px;
+  }
+  .lista {
+    overflow: visible;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: auto;
+  }
+  .ekran {
+    height: auto;
+  }
+  mat-expansion-panel {
+    background-color: black;
+  }
+}
+@media (max-width: 320px) {
+  .zanr {
+    height: 150px;
+  }
+  .lista {
+    overflow: visible;
+    margin-right: 5%;
+    margin-left: 5%;
+    height: auto;
+  }
+  .ekran {
+    height: auto;
+  }
+  mat-expansion-panel {
+    background-color: black;
+  }
 }
