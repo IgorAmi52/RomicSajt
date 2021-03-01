@@ -14,9 +14,9 @@
           <span>{{ zanr.ime }}</span>
         </mat-expansion-panel-header>
         <div *ngFor="let pesma of Pesme">
-          <div *ngIf="zanr.ime === pesma.zanr">
+          <div *ngIf="zanr.ime === pesma.zanr" class="pesma">
             {{ pesma.ime }}
-            <audio controls>
+            <audio controls style="float: right">
               <source [src]="pesma.put" />
             </audio>
           </div>

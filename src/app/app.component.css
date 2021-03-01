@@ -32,9 +32,7 @@
   .mywork {
     visibility: hidden;
   }
-  h1 {
-    font: 100px Arial, sans-serif;
-  }
+
   span {
     font-size: 100px;
   }
@@ -169,8 +167,11 @@ h1 {
 span {
   display: inline-block;
   transform: translateY(100%);
-
+  font: 100px "Permanent Marker", cursive;
   animation-name: romictekst;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+}
+button {
+  font: 100px "Permanent Marker", cursive;
 }

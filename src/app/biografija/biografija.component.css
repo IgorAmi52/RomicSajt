@@ -2,20 +2,44 @@ div {
   padding: 20px;
   width: 100%;
 }
+.malo {
+  display: none;
+}
 
 mat-card {
-  background-color: #f8f8ff;
+  background-color: rgb(26, 3, 26);
   width: 100%;
+  color: white;
+  font-size: 1.5em;
 }
 
 mat-card-title {
-  font-size: 2em;
+  font-size: 1.7em;
+  font-family: "Permanent Marker", cursive;
+}
+mat-card-content {
+  font-family: "Permanent Marker", cursive;
 }
 mat-grid-tile {
   padding: 10px;
 }
 @media (max-width: 991px) {
-  app-futer {
-    visibility: hidden;
+  .futer {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  .veliko {
+    display: none;
+  }
+  .malo {
+    display: block;
+    margin-bottom: 60px;
+  }
+  div {
+    padding: 0;
+  }
+  mat-grid-tile {
+    padding: 0;
   }
 }
